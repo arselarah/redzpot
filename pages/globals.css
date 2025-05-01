@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.instagram {
+  background-image: url('/assets/iconos/instagram.png');
+  background-size: 80%;
+}
+.x {
+  background-image: url('/assets/iconos/x.png');
+  background-size: 60%;
+}
+.linkedin {
+  background-image: url('/assets/iconos/linkedin.png');
+  background-size: 75%;
+}
+.facebook {
+  background-image: url('/assets/iconos/facebook.png');
+  background-size: 75%;
+}
