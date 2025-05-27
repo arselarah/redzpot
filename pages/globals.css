@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 .instagram {
   background-image: url('/assets/iconos/instagram.png');
   background-size: 80%;
@@ -17,4 +21,25 @@
 .facebook {
   background-image: url('/assets/iconos/facebook.png');
   background-size: 75%;
+}
+
+.barras-rojas::after {
+  bottom: -2rem;
+  right: -2rem;
+  width: 2rem;
+  height: calc(25% + 2rem);
+}
+
+.barras-rojas::before {
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+}
+
+.barras-rojas::after,
+.barras-rojas::before {
+  content: '';
+  position: absolute;
+  background-color: #df002f;
 }
