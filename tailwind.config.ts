@@ -16,8 +16,8 @@ export default {
         'fluid-md': 'clamp(1.05rem, 1vw + 1.5rem, 1.25rem)'
       },
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)'
+        secondary_dark: '#1a1a1a',
+        primary_red: '#df002f'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
