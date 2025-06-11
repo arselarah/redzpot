@@ -8,11 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        'fluid-cover': 'clamp(2.5rem, 3vw + 1rem, 5.5rem)',
+        'fluid-lg': 'clamp(1.5rem, 2vw + 1rem, 2.5rem)',
+        'fluid-xl': 'clamp(2rem, 4vw, 3rem)',
+        'fluid-sm': 'clamp(0.875rem, 1vw + 0.5rem, 1.125rem)',
+        'fluid-md': 'clamp(1.05rem, 1vw + 1.5rem, 1.25rem)'
+      },
       colors: {
         background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        redzpot: '#df002f',
-        secondaryDark: '#1a1a1a'
+        foreground: 'var(--foreground)'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']
