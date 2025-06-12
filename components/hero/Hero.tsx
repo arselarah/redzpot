@@ -27,7 +27,7 @@ export default function Hero() {
             </div>
           </div>
           <div className='cajas w-full font-poppins'>
-            <div className='grid grid-cols-1 gap-4 px-4 md:grid-cols-2 md:px-8 lg:grid-cols-3'>
+            <div className='barras-rojas relative grid grid-cols-1 gap-4 px-4 md:grid-cols-2 md:px-8 lg:grid-cols-3'>
               <div className='caja flex aspect-square flex-col justify-between bg-primary_red p-4 md:p-8'>
                 <div className='caja_icono min-h-[40%]'></div>
                 <div className='caja_titulo relative'>
@@ -58,7 +58,7 @@ export default function Hero() {
                   </p>
                 </div>
               </div>
-              <div className='caja barras-rojas relative flex aspect-square flex-col justify-between bg-secondary_dark p-4 md:col-span-2 md:aspect-video md:p-8 lg:col-span-1 lg:aspect-square'>
+              <div className='caja relative flex aspect-square flex-col justify-between bg-secondary_dark p-4 md:col-span-2 md:aspect-video md:p-8 lg:col-span-1 lg:aspect-square'>
                 <div className='caja_icono min-h-[40%]'></div>
                 <div className='caja_titulo relative'>
                   <h3 className='text-clamp_subtitles font-light text-white'>
