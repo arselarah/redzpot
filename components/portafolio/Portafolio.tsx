@@ -1,6 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
-import { motion } from 'framer-motion'
+import Slider from '../slider/Slider'
+
 export default function Portafolio() {
   return (
     <>
@@ -29,35 +29,7 @@ export default function Portafolio() {
           </div>
 
           <div className='grid-servicios w-full py-8 md:py-16 lg:py-24'>
-            <div className='grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>Digital Strategy</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>UX Design</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>Integrated Marketing</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>Content strategy</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>Design & Concept</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:pl-24 hover:text-white'>
-                <p>Social Media Promotion</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>Media Planing & Buying</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>Brand Identity</p>
-              </div>
-              <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
-                <p>SEO Optimization</p>
-              </div>
-            </div>
+            <Slider />
           </div>
         </div>
       </section>
