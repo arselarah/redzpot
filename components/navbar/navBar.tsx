@@ -21,7 +21,7 @@ export default function NavBar() {
   ]
   return (
     <>
-      <section className='absolute left-0 top-0 flex h-20 w-full items-center justify-between bg-transparent px-4 font-poppins'>
+      <section className='absolute left-0 top-0 z-10 flex h-20 w-full items-center justify-between bg-transparent px-4 font-poppins'>
         <div className='mx-auto flex w-full max-w-[100rem] flex-row justify-between'>
           <div className='w-full max-w-32'>
             <Link href='' className='text-white'>

@@ -9,9 +9,9 @@ import '@fontsource/poppins/100.css'
 export default function Hero() {
   return (
     <>
-      <div className='flex min-h-screen w-full bg-black'>
+      <div className='relative z-[1] flex min-h-screen w-full bg-black'>
         <div className='mx-auto flex w-full max-w-[100rem] flex-col items-start justify-between gap-8'>
-          <div className='relative flex h-auto min-h-[60vh] w-full flex-col justify-end gap-4 px-4 md:px-8'>
+          <div className='h-fluid relative flex w-full flex-col justify-end gap-4 px-4 md:px-8'>
             <div>
               <h1 className='text-clamp_cover leading-tight text-white'>
                 REDZPOT
