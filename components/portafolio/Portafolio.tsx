@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from '../slider/Slider'
+import Carrusel from '../carrusel/Carrusel'
 
 export default function Portafolio() {
   return (
@@ -21,15 +22,18 @@ export default function Portafolio() {
                 </h3>
               </div>
             </div>
-            <div className='contenedor-boton'>
+            {/* <div className='contenedor-boton'>
               <button className='border-2 border-primary_red px-12 py-3 text-sm text-white'>
                 Contáctanos
               </button>
-            </div>
+            </div> */}
           </div>
 
-          <div className='grid-servicios w-full py-8 md:py-16 lg:py-24'>
+          {/* <div className='grid-servicios w-full py-8 md:py-16 lg:py-24'>
             <Slider />
+          </div> */}
+          <div className='grid-servicios w-full overflow-hidden py-8 md:py-16 lg:py-24'>
+            <Carrusel />
           </div>
         </div>
       </section>
