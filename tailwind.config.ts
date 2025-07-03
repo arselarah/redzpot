@@ -11,7 +11,8 @@ export default {
       colors: {
         secondary_dark: '#1a1a1a',
         primary_red: '#df002f',
-        gris: '#e0e0e0'
+        gris: '#e0e0e0',
+        claro: '#f3f3f3'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif']

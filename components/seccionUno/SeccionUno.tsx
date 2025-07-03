@@ -13,7 +13,9 @@ export default function SeccionUno() {
         <div className='mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:py-32'>
           <div className='red-bar-titles'></div>
           <div className='relative flex h-auto w-full flex-col gap-4'>
-            <h2 className='text-fluid-xl font-light text-black'>Servicios</h2>
+            <h2 className='text-fluid-xl font-light leading-tight text-black'>
+              Servicios
+            </h2>
           </div>
           <div className='relative flex h-auto w-full flex-col gap-4'>
             <h3 className='text-fluid-sm font-light uppercase text-primary_red'>
