@@ -4,6 +4,7 @@ import SeccionUno from '@/components/seccionUno/SeccionUno'
 import Portafolio from '@/components/portafolio/Portafolio'
 import Nosotros from '@/components/nosotros/Nosotros'
 import Testimonios from '@/components/testimonios/Testimonios'
+import PortafolioHorizontal from '@/components/portafolioHorizontal/PortafolioHorizontal'
 
 export default function index() {
   return (
@@ -11,7 +12,7 @@ export default function index() {
       <main>
         <Hero />
         <SeccionUno />
-        <Portafolio />
+        <PortafolioHorizontal />
         <Nosotros />
         <Testimonios />
       </main>

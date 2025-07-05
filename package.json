@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fontsource/poppins": "^5.2.5",
-    "framer-motion": "^12.17.3",
+    "framer-motion": "^12.23.0",
     "lucide-react": "^0.514.0",
     "motion": "^12.17.3",
     "next": "^15.3.1",
