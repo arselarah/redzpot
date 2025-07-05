@@ -51,7 +51,7 @@ export default function PortafolioHorizontal() {
           </div>
         </div>
         <div
-          className='carousel relative w-full gap-4 px-4 font-poppins lg:h-[500vh]'
+          className='carousel relative w-full gap-4 px-4 font-poppins lg:h-[400vh]'
           ref={targetRef}
         >
           <div
@@ -61,27 +61,27 @@ export default function PortafolioHorizontal() {
             <motion.div className='images flex' style={{ x }} ref={imagesRef}>
               {imagenes.map((imagen, index) => (
                 <div
-                  className='imageItem flex min-w-96 flex-row overflow-hidden'
+                  className='imageItem flex w-screen min-w-96 flex-row justify-center overflow-hidden'
                   key={index}
                 >
-                  <div className='relative flex aspect-square h-full w-full justify-start bg-red-300 lg:min-w-[50rem]'>
-                    <Image
-                      src={imagen}
-                      alt={`Imagen ${index + 1}`}
-                      width={500}
-                      height={500}
-                      className='h-auto w-full object-cover'
-                    />
-                  </div>
-                  <div>
-                    <p className='aspect-square w-full p-12 text-fluid-sm font-light text-white lg:min-w-[50rem]'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Vivamus id luctus ipsum, non feugiat nisl. Pellentesque
-                      habitant morbi tristique senectus et netus et malesuada
-                      fames ac turpis egestas. Aliquam erat volutpat. Orci
-                      varius natoque penatibus et magnis dis parturient montes,
-                      nascetur ridiculus mus.
-                    </p>
+                  <div className='relative flex max-w-[1440px] flex-row items-center justify-center'>
+                    <div className='justify-startlg:min-w-[50rem] relative flex aspect-square h-full w-full'>
+                      <Image
+                        src={imagen.image}
+                        alt={`Imagen ${index + 1}`}
+                        width={500}
+                        height={500}
+                        className='h-auto w-full object-cover'
+                      />
+                    </div>
+                    <div className='aspect-square w-full p-12 text-fluid-sm font-light text-white lg:min-w-[50rem]'>
+                      <h3 className='p-12 text-fluid-sm font-bold'>
+                        {imagen.title}
+                      </h3>
+                      <p className='p-12 text-fluid-sm font-light'>
+                        {imagen.text}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
