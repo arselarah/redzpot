@@ -51,7 +51,7 @@ export default function PortafolioHorizontal() {
           </div>
         </div>
         <div
-          className='carousel relative w-full gap-4 px-4 font-poppins lg:h-[400vh]'
+          className='carousel relative w-full gap-4 px-4 font-poppins lg:h-[250vh]'
           ref={targetRef}
         >
           <div
@@ -61,7 +61,7 @@ export default function PortafolioHorizontal() {
             <motion.div className='images flex' style={{ x }} ref={imagesRef}>
               {imagenes.map((imagen, index) => (
                 <div
-                  className='imageItem flex w-screen min-w-96 flex-row justify-center overflow-hidden'
+                  className='imageItem flex w-auto flex-row justify-center overflow-hidden lg:min-w-[96rem]'
                   key={index}
                 >
                   <div className='relative flex max-w-[1440px] flex-row items-center justify-center'>
