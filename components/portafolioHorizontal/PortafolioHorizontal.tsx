@@ -51,7 +51,7 @@ export default function PortafolioHorizontal() {
           </div>
         </div>
         <div
-          className='carousel relative w-full gap-4 px-4 font-poppins lg:h-[250vh]'
+          className='carousel relative w-full gap-4 px-4 font-poppins lg:h-[450vh]'
           ref={targetRef}
         >
           <div
