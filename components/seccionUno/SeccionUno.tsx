@@ -9,8 +9,8 @@ import '@fontsource/poppins/100.css'
 export default function SeccionUno() {
   return (
     <>
-      <section className='relative flex h-auto w-full flex-col justify-start bg-white font-poppins lg:h-[200vh]'>
-        <div className='relative top-0 mx-auto flex h-auto lg:h-screen w-full max-w-[100rem] flex-col items-start justify-center gap-4 px-4 py-12 md:px-8 md:py-16 lg:sticky lg:py-32'>
+      <section className='relative flex h-auto w-full flex-col justify-start bg-white font-poppins lg:h-[300vh]'>
+        <div className='relative top-0 mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-center gap-4 px-4 py-12 md:px-8 md:py-16 lg:sticky lg:h-screen lg:py-32'>
           <div className='red-bar-titles'></div>
           <div className='relative flex h-auto w-full flex-col gap-4'>
             <h2 className='text-fluid-xl font-light leading-tight text-black'>
@@ -22,7 +22,7 @@ export default function SeccionUno() {
               We work with you, not for you
             </h3>
           </div>
-          <div className='grid-servicios w-full py-8 md:py-16 lg:py-24 '>
+          <div className='grid-servicios w-full py-8 md:py-16 lg:py-24'>
             <div className='grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
               <div className='caja_servicios flex w-full cursor-pointer flex-col items-start justify-center bg-gris px-8 py-10 transition-all duration-300 ease-in-out hover:bg-primary_red hover:px-24 hover:text-white'>
                 <p>Digital Strategy</p>
