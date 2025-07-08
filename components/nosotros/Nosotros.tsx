@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export default function Nosotros() {
   return (
@@ -8,27 +9,47 @@ export default function Nosotros() {
         <div className='raya-roja absolute -top-8 left-1/2 h-16 w-[2px] -translate-x-1/2 bg-primary_red'></div>
         <div className='mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:py-32'>
           <div className='flex w-full flex-col items-start gap-8 md:flex-row md:items-center'>
-            <div className='contenedor-titulos grow flex flex-col gap-4'>
-              <div className='red-bar-titles'></div>
-              <div className='relative flex h-auto w-full flex-col gap-4'>
+            <div className='contenedor-titulos flex grow flex-col gap-4'>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: '3rem' }}
+                transition={{ duration: 0.5, delay: 0.9 }}
+                className='red-bar-titles'
+              ></motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className='relative flex h-auto w-full flex-col gap-4'
+              >
                 <h2 className='text-fluid-xl font-light leading-tight text-black'>
                   Nosotros
                 </h2>
-              </div>
-              <div className='relative flex h-auto w-full flex-col gap-4'>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className='relative flex h-auto w-full flex-col gap-4'
+              >
                 <h3 className='text-fluid-sm font-light uppercase text-primary_red'>
                   We work with you, not for you
                 </h3>
-              </div>
+              </motion.div>
             </div>
-            <div className='contenedor-boton max-w-[40rem]'>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 1 }}
+              className='contenedor-boton max-w-[40rem]'
+            >
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse volutpat felis et magna euismod, vel commodo metus
                 sagittis. Aliquam lobortis laoreet eros, quis posuere dui
                 aliquet id.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
         <article className='contenedor-grid mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 pb-12 md:px-8 md:pb-16 lg:pb-32'>

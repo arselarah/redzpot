@@ -36,17 +36,32 @@ export default function PortafolioHorizontal() {
         <div className='mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:py-32'>
           <div className='flex w-full flex-row items-center'>
             <div className='contenedor-titulos flex grow flex-col gap-4'>
-              <div className='red-bar-titles'></div>
-              <div className='relative flex h-auto w-full flex-col gap-4'>
+              <motion.div
+                initial={{ width: 0 }}
+                whileInView={{ width: '3rem' }}
+                transition={{ duration: 0.5, delay: 0.9 }}
+                className='red-bar-titles'
+              ></motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className='relative flex h-auto w-full flex-col gap-4'
+              >
                 <h2 className='text-fluid-xl font-light leading-tight text-white'>
                   Portafolio
                 </h2>
-              </div>
-              <div className='relative flex h-auto w-full flex-col gap-4'>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+                className='relative flex h-auto w-full flex-col gap-4'
+              >
                 <h3 className='text-fluid-sm font-light uppercase text-primary_red'>
                   We work with you, not for you
                 </h3>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -60,7 +75,10 @@ export default function PortafolioHorizontal() {
           >
             <motion.div className='images flex' style={{ x }} ref={imagesRef}>
               {imagenes.map((imagen, index) => (
-                <div
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
                   className='imageItem flex w-auto flex-row justify-center overflow-hidden lg:min-w-[96rem]'
                   key={index}
                 >
@@ -83,7 +101,7 @@ export default function PortafolioHorizontal() {
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </motion.div>
           </div>
