@@ -54,6 +54,7 @@ export default function SeccionUno() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
             className='grid-servicios w-full py-8 md:py-16 lg:py-24'
           >
             {/* <div className='grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3'>
