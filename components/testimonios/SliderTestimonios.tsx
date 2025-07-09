@@ -69,7 +69,7 @@ export default function SliderTestimonios() {
               </div>
             </SwiperSlide>
           ))}
-          <div className='custom-prev absolute right-16 top-48 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:left-4 lg:top-auto'>
+          <div className='custom-prev absolute -top-20 right-16 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:left-4 lg:top-auto'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5 text-white'
@@ -85,7 +85,7 @@ export default function SliderTestimonios() {
               />
             </svg>
           </div>
-          <div className='custom-next absolute right-0 top-48 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:left-20 lg:right-auto lg:top-auto'>
+          <div className='custom-next absolute -top-20 right-0 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:left-20 lg:right-auto lg:top-auto'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5 text-white'

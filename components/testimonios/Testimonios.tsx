@@ -44,7 +44,7 @@ export default function Testimonios() {
               </div>
             </div>
           </div>
-          <div className='contenedor-slider-testimonios lg:flex-rowitems-center relative flex w-full flex-col justify-center gap-8 py-0'>
+          <div className='contenedor-slider-testimonios lg:flex-rowitems-center relative flex w-full flex-col justify-center gap-8 pb-0 pt-24'>
             <SliderTestimonios />
           </div>
         </article>
