@@ -24,8 +24,8 @@ export default function Testimonios() {
             </div>
           </div>
         </div> */}
-        <article className='relative mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 overflow-hidden px-4 py-12 md:px-8 md:py-16 lg:py-32'>
-          <div className='relative flex w-full flex-col-reverse lg:absolute lg:left-12 lg:top-32 lg:flex-row'>
+        <article className='relative mx-auto flex h-screen w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:py-32'>
+          <div className='relative flex w-full flex-col items-end justify-start gap-8'>
             <div className='w-full grow lg:w-1/2'>
               <div></div>
             </div>
@@ -44,7 +44,7 @@ export default function Testimonios() {
               </div>
             </div>
           </div>
-          <div className='contenedor-slider-testimonios lg:flex-rowitems-center relative flex w-full flex-col justify-center gap-8 pb-0 pt-24'>
+          <div className='contenedor-slider-testimonios absolute top-0 flex w-full flex-col gap-8 pb-0 pt-24'>
             <SliderTestimonios />
           </div>
         </article>
