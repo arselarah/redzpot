@@ -44,7 +44,7 @@ export default function Testimonios() {
               </div>
             </div>
           </div>
-          <div className='contenedor-slider-testimonios absolute top-0 flex w-full flex-col gap-8 pb-0 pt-24'>
+          <div className='contenedor-slider-testimonios absolute inset-0 top-8 flex w-full flex-col gap-8 overflow-hidden pb-0 pt-32'>
             <SliderTestimonios />
           </div>
         </article>

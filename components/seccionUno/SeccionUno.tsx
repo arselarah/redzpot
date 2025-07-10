@@ -28,12 +28,14 @@ export default function SeccionUno() {
             initial={{ width: 0 }}
             whileInView={{ width: '3rem' }}
             transition={{ duration: 0.5, delay: 0.9 }}
+            viewport={{ once: true }}
             className='red-bar-titles'
           ></motion.div>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
             className='relative flex h-auto w-full flex-col gap-4'
           >
             <h2 className='text-fluid-xl font-light leading-tight text-black'>
@@ -44,6 +46,7 @@ export default function SeccionUno() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
+            viewport={{ once: true }}
             className='relative flex h-auto w-full flex-col gap-4'
           >
             <h3 className='text-fluid-sm font-light uppercase text-primary_red'>

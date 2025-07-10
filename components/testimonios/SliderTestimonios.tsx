@@ -29,7 +29,7 @@ export default function SliderTestimonios() {
   return (
     <>
       <div className='relative px-4 pb-12 pt-0'>
-        <div className='quote absolute right-0 top-2/3 z-0 h-48 w-48 -translate-y-1/2'>
+        <div className='quote absolute right-8 top-2/3 z-0 h-48 w-48 -translate-y-1/2'>
           <QuoteIcon />
         </div>
         <Swiper

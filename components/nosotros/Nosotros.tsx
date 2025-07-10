@@ -20,6 +20,7 @@ export default function Nosotros() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
+                viewport={{ once: true }}
                 className='relative flex h-auto w-full flex-col gap-4'
               >
                 <h2 className='text-fluid-xl font-light leading-tight text-black'>
@@ -30,6 +31,7 @@ export default function Nosotros() {
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
+                viewport={{ once: true }}
                 className='relative flex h-auto w-full flex-col gap-4'
               >
                 <h3 className='text-fluid-sm font-light uppercase text-primary_red'>
@@ -41,6 +43,7 @@ export default function Nosotros() {
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
+              viewport={{ once: true }}
               className='contenedor-boton max-w-[40rem]'
             >
               <p>
@@ -55,7 +58,17 @@ export default function Nosotros() {
         <article className='contenedor-grid mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 pb-12 md:px-8 md:pb-16 lg:pb-32'>
           <div className='relative grid h-auto w-full grid-cols-2 grid-rows-3 gap-4 md:grid-rows-2 md:gap-8 lg:max-h-[50rem] lg:grid-cols-3 lg:grid-rows-4'>
             <div className='barras-rojas-2 group relative col-span-2 row-span-1 md:row-span-2 lg:row-span-4'>
-              <div className='relative h-full w-full overflow-hidden'>
+              <motion.div
+                initial={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'
+                }}
+                whileInView={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)'
+                }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                viewport={{ once: true }}
+                className='relative h-full w-full overflow-hidden'
+              >
                 <Image
                   src='/assets/slider/7.webp'
                   alt='Imagen de nosotros'
@@ -70,10 +83,20 @@ export default function Nosotros() {
                     </h4>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className='barras-rojas-3 group relative col-span-2 row-span-1 lg:col-span-1 lg:row-span-2'>
-              <div className='relative h-full w-full overflow-hidden'>
+              <motion.div
+                initial={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'
+                }}
+                whileInView={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)'
+                }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                viewport={{ once: true }}
+                className='relative h-full w-full overflow-hidden'
+              >
                 <Image
                   src='/assets/slider/5.webp'
                   alt='Imagen de nosotros'
@@ -88,10 +111,20 @@ export default function Nosotros() {
                     </h4>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className='barras-rojas-4 group relative col-span-2 row-span-1 lg:col-span-1 lg:row-span-2'>
-              <div className='relative h-full w-full overflow-hidden'>
+              <motion.div
+                initial={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'
+                }}
+                whileInView={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)'
+                }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+                className='relative h-full w-full overflow-hidden'
+              >
                 <Image
                   src='/assets/slider/2.webp'
                   alt='Imagen de nosotros'
@@ -106,7 +139,7 @@ export default function Nosotros() {
                     </h4>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </article>

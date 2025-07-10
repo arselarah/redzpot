@@ -220,38 +220,3 @@
     height: 2rem;
   }
 }
-
-#reda-pricing-calculator {
-  color: #ffffff;
-  font-family: 'Poppins', Sans-serif;
-}
-.clamp-titles-3 {
-  font-size: clamp(1.5rem, 2vw, 2rem) !important;
-  font-family: 'Poppins', Sans-serif;
-  font-weight: 600;
-  line-height: 1.1em;
-}
-#hire-button {
-  color: #ffffff;
-  font-size: clamp(1rem, 2.6vw, 1.45rem);
-  font-family: 'Poppins', Sans-serif;
-  font-weight: 600;
-  line-height: 1.1em;
-  border-radius: 2rem;
-  padding: 1rem 1.5rem;
-  border: solid;
-  margin: 1rem auto 0rem;
-  display: inline-block;
-}
-#hire-button:hover {
-  background: radial-gradient(
-    at center center,
-    #7edf8b 0%,
-    #61ce70 100%
-  ) !important;
-}
-.caja-boton {
-  position: relative;
-  width: 100%;
-  display: flex;
-}

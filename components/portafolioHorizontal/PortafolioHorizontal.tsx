@@ -43,12 +43,14 @@ export default function PortafolioHorizontal() {
               initial={{ width: 0 }}
               whileInView={{ width: '3rem' }}
               transition={{ duration: 0.5, delay: 0.9 }}
+              viewport={{ once: true }}
               className='red-bar-titles'
             ></motion.div>
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
+              viewport={{ once: true }}
               className='relative flex h-auto w-full flex-col gap-4'
             >
               <h2 className='text-fluid-xl font-light leading-tight text-white'>
@@ -59,6 +61,7 @@ export default function PortafolioHorizontal() {
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
+              viewport={{ once: true }}
               className='relative flex h-auto w-full flex-col gap-4'
             >
               <h3 className='text-fluid-sm font-light uppercase text-primary_red'>
@@ -90,9 +93,14 @@ export default function PortafolioHorizontal() {
           >
             {imagenes.map((imagen, index) => (
               <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                initial={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)'
+                }}
+                whileInView={{
+                  clipPath: 'polygon(0 100%, 100% 100%, 100% 0, 0 0)'
+                }}
+                transition={{ duration: 0.4, delay: 0.1 + index * 0.1 }}
+                viewport={{ once: true }}
                 className={`imageItem flex w-full ${
                   isMobile ? 'flex-col' : 'flex-row'
                 } justify-center overflow-hidden ${
