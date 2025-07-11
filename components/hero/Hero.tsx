@@ -5,6 +5,7 @@ import '@fontsource/poppins/400.css'
 import '@fontsource/poppins/300.css'
 import '@fontsource/poppins/200.css'
 import '@fontsource/poppins/100.css'
+import { motion } from 'framer-motion'
 
 export default function Hero() {
   return (
@@ -12,18 +13,49 @@ export default function Hero() {
       <div className='relative z-[1] flex min-h-screen w-full bg-black'>
         <div className='mx-auto flex w-full max-w-[100rem] flex-col items-start justify-between gap-8 md:gap-16 lg:gap-32'>
           <div className='relative flex h-fluid w-full flex-col justify-end gap-4 px-4 md:px-8'>
-            <div>
-              <h1 className='text-clamp_cover leading-tight text-white'>
-                REDZPOT
-              </h1>
-              <h1 className='text-clamp_cover leading-tight text-white'>
-                Impulso en Imagen
-              </h1>
+            <div className='relative flex w-full flex-col items-start gap-0'>
+              <div className='contenedor-titulos relative flex w-full flex-col gap-0 overflow-hidden'>
+                <motion.h1
+                  initial={{ y: '100%', opacity: 0 }}
+                  animate={{ y: '0%', opacity: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: 0.1,
+                    ease: [0.35, 0.17, 0.3, 0.86]
+                  }}
+                  className='text-clamp_cover leading-tight text-white'
+                >
+                  REDZPOT
+                </motion.h1>
+              </div>
+              <div className='contenedor-titulos relative flex w-full flex-col gap-0 overflow-hidden'>
+                <motion.h2
+                  initial={{ y: '100%', opacity: 0 }}
+                  animate={{ y: '0%', opacity: 1 }}
+                  transition={{
+                    duration: 0.4,
+                    delay: 0.3,
+                    ease: [0.35, 0.17, 0.3, 0.86]
+                  }}
+                  className='text-clamp_cover leading-tight text-white'
+                >
+                  Impulso en Imagen
+                </motion.h2>
+              </div>
             </div>
             <div>
-              <button className='border-2 border-primary_red px-12 py-3 text-sm text-white'>
+              <motion.button
+                initial={{ opacity: 0, scale: 1.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.4,
+                  delay: 0.6,
+                  ease: [0.35, 0.17, 0.3, 0.86]
+                }}
+                className='origin-center border-2 border-primary_red px-12 py-3 text-sm text-white'
+              >
                 Contáctanos
-              </button>
+              </motion.button>
             </div>
           </div>
           <div className='cajas w-full font-poppins'>

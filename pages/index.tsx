@@ -13,7 +13,7 @@ export default function index() {
         <SeccionUno />
         <PortafolioHorizontal />
         <Nosotros />
-        <Testimonios />
+        {/* <Testimonios /> */}
       </main>
     </>
   )
