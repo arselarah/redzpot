@@ -73,16 +73,16 @@ export default function PortafolioHorizontal() {
       </div>
 
       <div
-        className={`carousel relative w-full gap-4 px-4 font-poppins ${
+        className={`carousel relative w-full gap-0 overflow-visible px-4 font-poppins ${
           isMobile ? 'h-auto' : 'lg:h-[450vh]'
         }`}
         ref={targetRef}
       >
         <div
-          className={`contentContainer ${
+          className={`contentContainer z-[0] ${
             isMobile
               ? 'flex flex-col'
-              : 'sticky top-0 flex h-screen items-center justify-start overflow-hidden'
+              : 'sticky top-0 flex h-screen items-center justify-start'
           }`}
           ref={containerRef}
         >
@@ -103,9 +103,7 @@ export default function PortafolioHorizontal() {
                 viewport={{ once: true }}
                 className={`imageItem flex w-full ${
                   isMobile ? 'flex-col' : 'flex-row'
-                } justify-center overflow-hidden ${
-                  isMobile ? '' : 'lg:min-w-[96rem]'
-                }`}
+                } justify-center ${isMobile ? '' : 'lg:min-w-[96rem]'}`}
                 key={index}
               >
                 <div className='relative flex max-w-[1440px] flex-col items-center justify-center lg:flex-row'>
