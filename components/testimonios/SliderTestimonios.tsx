@@ -47,8 +47,8 @@ export default function SliderTestimonios() {
           //pagination={{ clickable: true }}
         >
           {slides.map((slide, index) => (
-            <SwiperSlide key={index}>
-              <div className='relative flex w-full flex-col-reverse items-end justify-center gap-24 text-black lg:flex-row'>
+            <SwiperSlide key={index} className='pt-16 md:pt-0'>
+              <div className='relative flex w-full flex-col-reverse items-end justify-center gap-8 text-black md:gap-24 lg:flex-row'>
                 <div className='relative flex h-full w-full items-end justify-end lg:w-1/2'>
                   <div className='relative flex h-full w-full flex-col items-end justify-end'>
                     <Image
@@ -73,7 +73,7 @@ export default function SliderTestimonios() {
               </div>
             </SwiperSlide>
           ))}
-          <div className='custom-prev absolute -top-20 right-16 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:left-4 lg:top-auto'>
+          <div className='custom-prev absolute left-0 top-0 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:top-auto'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5 text-white'
@@ -89,7 +89,7 @@ export default function SliderTestimonios() {
               />
             </svg>
           </div>
-          <div className='custom-next absolute -top-20 right-0 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:left-20 lg:right-auto lg:top-auto'>
+          <div className='custom-next absolute right-0 top-0 z-10 flex h-14 w-14 cursor-pointer flex-col items-center justify-center rounded-full bg-gray-300 text-4xl transition-colors duration-500 hover:bg-[#df002f] lg:-bottom-8 lg:top-auto'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='h-5 w-5 text-white'

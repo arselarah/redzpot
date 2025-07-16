@@ -34,7 +34,7 @@ export default function PortafolioHorizontal() {
   const x = useTransform(scrollYProgress, [0, 1], ['0%', xTarget])
 
   return (
-    <section className='relative h-auto w-full bg-black font-poppins'>
+    <section className='mb:py-0 relative h-auto w-full bg-black py-12 font-poppins'>
       <div className='raya-roja absolute -top-8 left-1/2 h-16 w-[2px] -translate-x-1/2 bg-primary_red'></div>
       <div className='mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:py-32'>
         <div className='flex w-full flex-row items-center'>

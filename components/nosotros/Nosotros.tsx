@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export default function Nosotros() {
   return (
     <>
-      <section className='relative z-[1] w-full bg-white font-poppins'>
+      <section className='mb:py-0 relative z-[1] w-full bg-white py-12 font-poppins'>
         <div className='raya-roja absolute -top-8 left-1/2 z-[1] h-16 w-[2px] -translate-x-1/2 bg-primary_red'></div>
         <div className='mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-start gap-4 px-4 py-12 md:px-8 md:py-16 lg:py-32'>
           <div className='flex w-full flex-col items-start gap-8 md:flex-row md:items-center'>

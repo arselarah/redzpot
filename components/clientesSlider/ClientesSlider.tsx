@@ -17,7 +17,8 @@ export default function ClientesSlider() {
   const duplicarLogos = [...logos, ...logos] // Duplicar los logos para el efecto de slider infinito
   return (
     <>
-      <div className='relative w-full bg-claro py-32'>
+      <div className='relative w-full bg-claro py-12 lg:py-24'>
+        <div className='relative mx-auto h-[2px] w-full max-w-[100rem] bg-slate-200'></div>
         <motion.div
           style={{ width: 'max-content' }}
           animate={{ x: ['0%', '-45%'] }}
@@ -26,7 +27,7 @@ export default function ClientesSlider() {
             ease: 'linear',
             repeat: Infinity
           }}
-          className='flex w-full flex-nowrap items-center justify-center gap-32'
+          className='flex w-full flex-nowrap items-center justify-center gap-32 py-12'
         >
           {duplicarLogos.map((cliente, index) => (
             <div

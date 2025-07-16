@@ -22,7 +22,7 @@ const servicios = [
 export default function SeccionUno() {
   return (
     <>
-      <section className='relative flex h-auto w-full flex-col justify-start bg-white font-poppins lg:h-[300vh]'>
+      <section className='mb:py-0 relative flex h-auto w-full flex-col justify-start bg-white py-12 font-poppins lg:h-[300vh]'>
         <div className='relative top-0 mx-auto flex h-auto w-full max-w-[100rem] flex-col items-start justify-center gap-4 px-4 py-12 md:px-8 md:py-16 lg:sticky lg:py-32'>
           <motion.div
             initial={{ width: 0 }}
@@ -89,7 +89,7 @@ export default function SeccionUno() {
                 <p>SEO Optimization</p>
               </div>
             </div> */}
-            <div className='grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3 md:pt-8'>
+            <div className='grid w-full grid-cols-1 gap-4 md:grid-cols-2 md:gap-8 md:pt-8 lg:grid-cols-3'>
               {servicios.map((servicio, index) => (
                 <motion.div
                   key={index}
