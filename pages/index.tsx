@@ -5,6 +5,7 @@ import Nosotros from '@/components/nosotros/Nosotros'
 import Testimonios from '@/components/testimonios/Testimonios'
 import PortafolioHorizontal from '@/components/portafolioHorizontal/PortafolioHorizontal'
 import ClientesSlider from '@/components/clientesSlider/ClientesSlider'
+import Noticias from '@/components/noticias/Noticias'
 
 export default function index() {
   return (
@@ -16,6 +17,7 @@ export default function index() {
         <Nosotros />
         <Testimonios />
         <ClientesSlider />
+        <Noticias />
       </main>
     </>
   )
